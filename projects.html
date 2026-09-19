@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects and school work by Antravius Thomas.">
+  <title>Antravius Thomas | Projects/Work</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="index.html">Antravius Thomas</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html" aria-current="page">Projects/Work</a></li>
+        <li><a href="about.html">About/Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-heading container">
+      <p class="eyebrow">My Work</p>
+      <h1>Projects and Experience</h1>
+      <p>Here are some of the projects and skills I have worked on as an IT student.</p>
+    </section>
+
+    <section class="section container" aria-labelledby="projects-title">
+      <h2 id="projects-title">Project Examples</h2>
+
+      <div class="project-controls" aria-label="Project filters">
+        <button class="filter-button active-filter" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="web">Web</button>
+        <button class="filter-button" type="button" data-filter="it">IT</button>
+        <button class="filter-button" type="button" data-filter="audio">Audio</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="card project-card" data-category="web">
+          <span class="tag">Web</span>
+          <h3>Personal Portfolio Website</h3>
+          <p>I created a multi-page website using HTML, CSS, and JavaScript. I focused on responsive design, accessibility, and clear navigation.</p>
+          <ul>
+            <li>HTML page structure</li>
+            <li>Responsive CSS layout</li>
+            <li>JavaScript interactions</li>
+          </ul>
+        </article>
+
+        <article class="card project-card" data-category="it">
+          <span class="tag">IT</span>
+          <h3>Networking Command Practice</h3>
+          <p>I practiced basic Windows networking commands such as ipconfig, ping, tracert, hostname, netstat, and systeminfo.</p>
+          <ul>
+            <li>Command Prompt practice</li>
+            <li>Network troubleshooting</li>
+            <li>System information</li>
+          </ul>
+        </article>
+
+        <article class="card project-card" data-category="audio">
+          <span class="tag">Audio</span>
+          <h3>Live Sound Engineering Research</h3>
+          <p>I researched challenges caused by outdated equipment and technology in live sound engineering and how upgrades and training can help.</p>
+          <ul>
+            <li>Audio equipment research</li>
+            <li>Technology challenges</li>
+            <li>Problem solving</li>
+          </ul>
+        </article>
+
+        <article class="card project-card" data-category="web">
+          <span class="tag">Web</span>
+          <h3>About Me Web Page</h3>
+          <p>I built a simple HTML and CSS page to practice headings, paragraphs, sections, colors, spacing, and linking a stylesheet.</p>
+          <ul>
+            <li>HTML basics</li>
+            <li>CSS styling</li>
+            <li>Page organization</li>
+          </ul>
+        </article>
+      </div>
+
+      <p id="filter-status" class="sr-only" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antravius Thomas. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

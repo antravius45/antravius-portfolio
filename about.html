@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About and contact page for Antravius Thomas.">
+  <title>Antravius Thomas | About/Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="index.html">Antravius Thomas</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects/Work</a></li>
+        <li><a class="active" href="about.html" aria-current="page">About/Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-heading container">
+      <p class="eyebrow">About Me</p>
+      <h1>Getting to Know Me</h1>
+      <p>I am an IT student who is working on building practical technology skills and becoming more confident with problem solving.</p>
+    </section>
+
+    <section class="section container two-column" aria-labelledby="about-title">
+      <div>
+        <h2 id="about-title">A Little About Me</h2>
+        <p>
+          I enjoy working with computers, playing video games, and listening to music.
+          I also have an interest in live sound because I like learning how equipment,
+          mixers, and stage setups work together.
+        </p>
+        <p>
+          In school, I am working on improving my coding, organization, time management,
+          and troubleshooting skills. My goal is to earn my degree and eventually work
+          in the technology field.
+        </p>
+      </div>
+
+      <aside class="card">
+        <h2>Skills I Am Building</h2>
+        <ul class="skills-list">
+          <li>HTML and CSS</li>
+          <li>JavaScript basics</li>
+          <li>Computer troubleshooting</li>
+          <li>Networking fundamentals</li>
+          <li>Technical problem solving</li>
+          <li>Organization and time management</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact Me</h2>
+        <p>If you would like to send a message, use the form below.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p id="name-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p id="email-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+            <p id="message-error" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <button class="button" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Antravius Thomas. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
